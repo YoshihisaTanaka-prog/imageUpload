@@ -10,6 +10,8 @@
 
 <h2>User一覧</h2>
 <% @users.each do |user| %>
-  <%= user.name %>
+  <p>
+  <%= user.name %><br>
   <%= image_tag(user.image.to_s) %> <%# カラム名がimageの場合はto_sが必要 %>
+  </p>
 <% end %>
