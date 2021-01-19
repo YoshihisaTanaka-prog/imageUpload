@@ -1,0 +1,7 @@
+<%= form_for(@user) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, value: @user.name%><br>
+  <%= f.file_field :image %><br>
+  <%= image_tag(@user.image.to_s) %><br>
+  <%= f.submit '編集' %>
+<% end %>

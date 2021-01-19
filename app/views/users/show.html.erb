@@ -1,0 +1,4 @@
+<%= @user.name %><br>
+<%= @user.image.to_s %><br>
+<%= image_tag(@user.image.to_s) %><br><br> <%# カラム名がimageの場合はto_sが必要 %>
+<iframe src="<%= @user.image.to_s %>" width="600" height="332" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border:none;"></iframe>

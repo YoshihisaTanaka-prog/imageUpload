@@ -1,0 +1,6 @@
+<%= form_with model: @user, local: :true do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+  <%= f.file_field :image %><br>
+  <%= f.submit '登録' %>
+<% end %>
